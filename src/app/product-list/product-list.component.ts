@@ -20,11 +20,11 @@ export class ProductListComponent {
 
   getProductsSubscription(): void {
     this.dataService.getProducts().subscribe((products) => {
-      console.log(this.products);
       products.forEach((product) => {
-        return { ...product, available: product.inStock };
+        product.available = product.inStock;
       });
       this.products = products;
+      console.log(this.products);
     });
   }
 }

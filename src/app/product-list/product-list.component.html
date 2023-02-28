@@ -2,7 +2,7 @@
 <ul>
     <li *ngFor="let product of products">
         <span>{{product.id}} : </span> {{product.name}} 
-        <i [ngClass]="product.inStock? 'pi pi-check-circle': 'pi pi-times-circle'"></i>
+        <i [ngClass]="product.available? 'pi pi-check-circle': 'pi pi-times-circle'"></i>
     </li>
   </ul>
 
