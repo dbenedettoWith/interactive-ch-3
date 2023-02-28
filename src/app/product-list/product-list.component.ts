@@ -10,7 +10,6 @@ import { Observable, Subject, tap } from 'rxjs';
   styleUrls: ['./product-list.component.scss'],
 })
 export class ProductListComponent {
-  products$: Observable<any[]>;
   products: any[] = [];
 
   constructor(private dataService: DataRetrieverService) {}
