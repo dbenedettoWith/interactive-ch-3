@@ -18,7 +18,7 @@ export class ProductListComponent {
     this.getProductsSubscription();
   }
 
-  getProductsSubscription(): void {
+  getProductsSubscription() {
     this.dataService.getProducts().subscribe((products) => {
       products.forEach((product) => {
         product.available = product.inStock;
