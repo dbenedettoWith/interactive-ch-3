@@ -1,8 +1,6 @@
-import { Product } from './../models/product.models';
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { DataRetrieverService } from '../services/data-retriever.service';
-import { map, takeUntil } from 'rxjs/operators';
-import { Observable, Subject, tap } from 'rxjs';
+
 
 @Component({
   selector: 'app-product-list',
